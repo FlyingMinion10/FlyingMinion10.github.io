@@ -19,6 +19,7 @@ body {
     line-height: 120px;
     position: fixed;
     top: 0px;
+    z-index: 1000;
 }
 .header__logo {
     height: 120px;
