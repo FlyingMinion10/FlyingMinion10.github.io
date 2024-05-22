@@ -1,0 +1,11 @@
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.text-box__middle {
+    position: relative;
+    top: 30%;
+    
+}
