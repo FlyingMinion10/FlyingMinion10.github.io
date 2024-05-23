@@ -58,7 +58,7 @@ body {
 .header__social--link {
     margin: 0 0.625rem; /* 10px en rem */
     color: inherit;
-    font-size: 2.1875rem; /* 35px en rem */
+    font-size: 40px; /* 35px en rem */
     text-decoration: none;
 }
 
@@ -260,7 +260,7 @@ body {
     .header__social--link {
         margin: 0 0.625rem; /* 10px en rem */
         color: inherit;
-        font-size: 2.1875rem; /* 35px en rem */
+        font-size: 50px; /* 35px en rem */
         text-decoration: none;
     }
     
