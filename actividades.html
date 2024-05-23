@@ -6,12 +6,14 @@
     <title>El Zaguán</title>
     <script src="https://kit.fontawesome.com/ee356f15bf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/columns.css">
+    <link rel="stylesheet" href="styles/buttons.css">
 </head>
 <body>
     <header class="header">
-        <img class="header__logo" src="images/logo.png" alt="Zaguan Logo">
-        <div class="header__contact-info">
+        <div class="header__logo">
+            <img class="header__logo--img" src="images/logo.png" alt="Zaguan Logo">
+        </div>
+        <div class="header__contact">
             <a class="header__contact--link" href="https://wa.me/523411479199?text=Hola%20me%20gustaria%20hacer%20una%20reserva" target="_blank">Reserva al 33-2258-0420</a>
         </div>
         <div class="header__social">
@@ -25,6 +27,14 @@
                 <i class="fa fa-envelope"></i>
             </a>
         </div>
+        <li class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()">Más <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="#opcion1">Opción 1</a>
+                <a href="#opcion2">Opción 2</a>
+                <a href="#opcion3">Opción 3</a>
+            </div>
+        </li>
     </header>
     <nav class="nav">
         <ul>
@@ -91,5 +101,7 @@
     <footer class="footer">
         <p class="footer__text">&copy; 2024 El Zaguán. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
