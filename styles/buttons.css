@@ -1,0 +1,54 @@
+/* Estilo básico para el botón */
+.dropbtn {
+    background-color: #640103;
+    color: white;
+    padding: 3.161875rem 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+/* Contenedor del menú desplegable */
+.dropdown {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    display: inline-block;
+}
+
+/* Contenido del menú desplegable */
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 16px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: max-height 0.5s ease-in;
+}
+
+/* Estilo para los enlaces dentro del menú desplegable */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Cambiar color de los enlaces al pasar el ratón */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mostrar el menú desplegable cuando se añade la clase 'show' */
+.dropdown-content.show {
+    max-height: 30rem; /* Ajusta este valor según la altura de tu menú */
+    max-width: 10rem; /* Ajusta este valor según la altura de tu menú */
+}
+@media (max-width: 768px) {
+    .dropbtn {
+        display: block;
+    }
+}

@@ -26,12 +26,15 @@ body {
 }
 
 .header__logo {
-    height: 7.5rem; /* 120px en rem */
     position: absolute;
     left: 2.5rem; /* 40px en rem */
 }
 
-.header__contact-info {
+.header__logo--img {
+    height: 7.5rem; /* 120px en rem */    
+}
+
+.header__contact {
     display: inline-block;
 }
 
@@ -231,57 +234,40 @@ body {
     }
     
     .header__logo {
+        height: 7.5rem;
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .header__logo--img {
         height: 7.5rem; /* 120px en rem */
     }
     
-    .header__contact-info {
+    .header__contact {
         display: none; /* Ocultar el texto de la clase */
     }
     
     .header__social {
         position: absolute;
-        right: 2.5rem; /* 40px en rem */
-        top: 50%;
-        transform: translateY(-50%);
+        left: 1%;
+        text-align: left;
+        top: 0;
+        height: 7.5rem;
     }
     
     .header__social--link {
-        margin: 0 0.625rem; /* 10px en rem */
+        margin: 0 0.4rem; /* 6.4px en rem */
         color: inherit;
         font-size: 2.1875rem; /* 35px en rem */
         text-decoration: none;
     }
     
     .nav {
-        background-color: #640103;
-        color: #FEFFFA;
-        text-align: center;
-        width: 100%;
-        border-top: 0.25rem solid #4f4f4f; /* 4px en rem */
         display: none;
     }
     
-    .nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding-right: 1.25rem; /* 20px en rem */
-    }
-    
-    .nav li {
-        font-size: 1.125rem; /* 18px en rem */
-    }
-    
-    .nav__link {
-        display: block;
-        color: inherit;
-        padding: 1rem 0; /* Ajustado para el tamaño del menú */
-        text-decoration: none;
-    }
-
     .landing {
         padding: 15rem 1rem; /* Ajustado para dispositivos móviles */
     }
