@@ -49,6 +49,7 @@ body {
     text-align: right;
     top: 0;
     right: 2.5rem; /* 40px en rem */
+    height: 7.5rem;
 }
 
 .header__social--link {
@@ -61,9 +62,10 @@ body {
 .nav {
     background-color: #640103;
     color: #FEFFFA;
-    width: 100%;
-    height: 4.75rem; /* 76px en rem */
     text-align: center;
+    width: 100%;
+    /* height: 4.823125rem; /* 76px en rem */
+    height: 5.04437rem; /* 76px en rem */
     border-top: 0.25rem solid #4f4f4f; /* 4px en rem */
 }
 
@@ -213,93 +215,138 @@ body {
 }
 
 /* Agrega esta regla para que el sitio sea responsive */
-@media only screen and (max-width: 768px) {
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
     .header {
-        height: 5rem; /* Reduces el tamaño del header para dispositivos móviles */
-        line-height: 5rem; /* Reduces el tamaño del header para dispositivos móviles */
-        padding-top: 5rem; /* Ajusta el espacio en la parte superior del body */
+        background-color: #FEFFFA;
+        color: #640103;
+        height: 7.5rem; /* 120px en rem */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
     }
-
+    
     .header__logo {
-        height: 5rem; /* Reduces el tamaño del logo para dispositivos móviles */
-        left: 1.5rem; /* Ajusta la posición del logo para dispositivos móviles */
+        height: 7.5rem; /* 120px en rem */
     }
-
-    .header__contact--link {
-        font-size: 1.5rem; /* Reduces el tamaño del texto de contacto para dispositivos móviles */
+    
+    .header__contact-info {
+        display: none; /* Ocultar el texto de la clase */
     }
-
+    
+    .header__social {
+        position: absolute;
+        right: 2.5rem; /* 40px en rem */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
     .header__social--link {
-        font-size: 1.5rem; /* Reduces el tamaño de los íconos de redes sociales para dispositivos móviles */
+        margin: 0 0.625rem; /* 10px en rem */
+        color: inherit;
+        font-size: 2.1875rem; /* 35px en rem */
+        text-decoration: none;
     }
-
+    
     .nav {
-        height: 3.5rem; /* Reduces el tamaño del menú de navegación para dispositivos móviles */
-        border-top: 0.15rem solid #4f4f4f; /* Reduce el grosor del borde del menú de navegación para dispositivos móviles */
+        background-color: #640103;
+        color: #FEFFFA;
+        text-align: center;
+        width: 100%;
+        border-top: 0.25rem solid #4f4f4f; /* 4px en rem */
+        display: none;
     }
-
+    
     .nav ul {
-        padding: 0 10%; /* Ajusta el espacio entre los elementos del menú para dispositivos móviles */
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 1.25rem; /* 20px en rem */
     }
-
+    
     .nav li {
-        font-size: 1rem; /* Reduce el tamaño del texto del menú para dispositivos móviles */
+        font-size: 1.125rem; /* 18px en rem */
+    }
+    
+    .nav__link {
+        display: block;
+        color: inherit;
+        padding: 1rem 0; /* Ajustado para el tamaño del menú */
+        text-decoration: none;
     }
 
     .landing {
-        padding: 15rem 1.25rem; /* Reduce el espacio en el área de aterrizaje para dispositivos móviles */
+        padding: 15rem 1rem; /* Ajustado para dispositivos móviles */
     }
 
     .landing__title {
-        font-size: 2.5rem; /* Reduce el tamaño del título para dispositivos móviles */
+        font-size: 2.5rem; /* 40px en rem */
     }
 
     .landing__subtitle {
-        font-size: 1.5rem; /* Reduce el tamaño del subtítulo para dispositivos móviles */
+        font-size: 1.5rem; /* 24px en rem */
     }
 
     .content {
-        padding: 4rem 1.25rem; /* Reduce el espacio en el contenido para dispositivos móviles */
+        padding: 4rem 1rem; /* Ajustado para dispositivos móviles */
     }
 
     .content__text {
-        font-size: 1rem; /* Reduce el tamaño del texto del contenido para dispositivos móviles */
+        font-size: 1rem; /* 16px en rem */
+    }
+
+    .footer {
+        padding: 1rem; /* Ajustado para dispositivos móviles */
     }
 
     .footer__text {
-        font-size: 0.75rem; /* Reduce el tamaño del texto del pie de página para dispositivos móviles */
+        font-size: 0.75rem; /* 12px en rem */
     }
 
     .subpage {
-        padding: 0 1.25rem; /* Ajusta el espacio en las subpáginas para dispositivos móviles */
-        padding-top: 2.5rem; /* Ajusta el espacio en la parte superior de las subpáginas para dispositivos móviles */
+        padding: 0 1rem; /* 16px en rem */
+        padding-top: 2.5rem; /* 40px en rem */
     }
 
     .subpage__title {
-        font-size: 2rem; /* Reduce el tamaño del título de la subpágina para dispositivos móviles */
+        font-size: 2rem; /* 32px en rem */
     }
 
     .subpage__subtitle {
-        font-size: 1.5rem; /* Reduce el tamaño del subtítulo de la subpágina para dispositivos móviles */
+        font-size: 1.5rem; /* 24px en rem */
     }
 
     .activity {
-        padding: 0 1.25rem; /* Ajusta el espacio en la actividad para dispositivos móviles */
-        padding-top: 3rem; /* Ajusta el espacio en la parte superior de la actividad para dispositivos móviles */
-        min-height: auto; /* Elimina la altura mínima en la actividad para dispositivos móviles */
+        padding: 0 4rem; /* 32px en rem */
+        padding-top: 2rem; /* 48px en rem */
+        min-height: auto;
     }
 
     .activity__text-container,
     .activity__imag-container {
-        width: 100%; /* Ajusta el ancho de los contenedores de texto e imagen para dispositivos móviles */
-        padding: 0.5rem; /* Ajusta el espacio interior de los contenedores de texto e imagen para dispositivos móviles */
+        width: 100%;
+    }
+
+    .activity__image {
+        width: 100%;
     }
 
     .activity__title {
-        font-size: 2rem; /* Reduce el tamaño del título de actividad para dispositivos móviles */
+        font-size: 2rem; /* 32px en rem */
     }
 
     .activity__body {
-        font-size: 1rem; /* Reduce el tamaño del texto de actividad para dispositivos móviles */
+        font-size: 1rem; /* 16px en rem */
+    }
+    .text-box__middle {
+        padding-top: 1rem;
+
     }
 }
