@@ -62,9 +62,9 @@
 
 @media (max-width: 768px) {
     .dropbtn {
-        background-color: #FEFFFA;
+        background-color: #ffffff00;
         color: #640103;
-        padding: 30px 78.14px;
+        padding: 30.6px 78.14px;
         font-size: 50px;
         border: none;
         cursor: pointer;
