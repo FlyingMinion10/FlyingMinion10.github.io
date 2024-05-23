@@ -251,14 +251,14 @@ body {
     
     .header__social {
         position: absolute;
-        left: 1%;
+        left: 5%;
         text-align: left;
         top: 0;
         height: 7.5rem;
     }
     
     .header__social--link {
-        margin: 0 0.4rem; /* 6.4px en rem */
+        margin: 0 0.625rem; /* 10px en rem */
         color: inherit;
         font-size: 2.1875rem; /* 35px en rem */
         text-decoration: none;

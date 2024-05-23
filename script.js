@@ -1,6 +1,7 @@
 function toggleDropdown() {
     var dropdownContent = document.getElementById("dropdownContent");
     dropdownContent.classList.toggle("show");
+    console.log("Dropdown toggled!");
 }
 
 // Cierra el menú si se hace clic fuera de él

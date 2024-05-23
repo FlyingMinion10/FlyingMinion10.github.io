@@ -1,19 +1,12 @@
 /* Estilo básico para el botón */
 .dropbtn {
-    background-color: #640103;
-    color: white;
-    padding: 3.161875rem 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
     display: none;
 }
 
 /* Contenedor del menú desplegable */
 .dropdown {
     position: absolute;
-    right: 0%;
-    top: 0%;
+    right: 5%;
     display: inline-block;
 }
 
@@ -25,7 +18,7 @@
     background-color: #f9f9f9;
     min-width: 16px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 100;
     transition: max-height 0.5s ease-in;
 }
 
@@ -47,8 +40,20 @@
     max-height: 30rem; /* Ajusta este valor según la altura de tu menú */
     max-width: 10rem; /* Ajusta este valor según la altura de tu menú */
 }
+
+.fa-bars {
+    cursor: pointer; /* Asegúrate de que el cursor cambie al pasar por el ícono */
+    pointer-events: none; /* Permite que el clic pase al botón */
+}
+
 @media (max-width: 768px) {
     .dropbtn {
+        background-color: #FEFFFA;
+        color: #640103;
+        padding: 2rem 16px;
+        font-size: 40px;
+        border: none;
+        cursor: pointer;
         display: block;
     }
 }
