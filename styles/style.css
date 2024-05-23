@@ -251,7 +251,7 @@ body {
     
     .header__social {
         position: absolute;
-        left: 5%;
+        left: 2.5rem;
         text-align: left;
         top: 0;
         height: 7.5rem;
