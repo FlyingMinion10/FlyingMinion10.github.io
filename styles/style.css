@@ -18,16 +18,20 @@ body {
     color: #640103;
     height: 7.5rem; /* 120px en rem */
     width: 100%;
-    text-align: center;
-    line-height: 7.5rem; /* 120px en rem */
     position: fixed;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos en las esquinas */
+    align-items: center;
+    line-height: 7.5rem; /* 120px en rem */
 }
 
 .header__logo {
-    position: absolute;
+    position: relative;
     left: 2.5rem; /* 40px en rem */
+    height: 7.5rem;
+    flex: 1;
 }
 
 .header__logo--img {
@@ -35,7 +39,10 @@ body {
 }
 
 .header__contact {
+    /* width: 100%; */
     display: inline-block;
+    flex: 1;
+    text-align: center;
 }
 
 .header__contact--link {
@@ -48,11 +55,9 @@ body {
 }
 
 .header__social {
-    position: absolute;
-    text-align: right;
-    top: 0;
-    right: 2.5rem; /* 40px en rem */
-    height: 7.5rem;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Alinea a la derecha */
 }
 
 .header__social--link {
@@ -226,23 +231,32 @@ body {
         height: 7.5rem; /* 120px en rem */
         width: 100%;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
         position: fixed;
         top: 0;
         z-index: 1000;
     }
+
+    .header__logo,
+    .header__social,
+    .dropdown {
+        flex: 1; /* Hace que cada elemento ocupe el mismo espacio */
+        justify-content: center; /* Centra los elementos dentro de cada div */
+        align-items: center; /* Centra los elementos verticalmente */
+    }
     
     .header__logo {
         height: 7.5rem;
-        position: absolute;
-        bottom: 1rem;
-        left: 50%;
-        transform: translateX(-50%);
+        order: 2;
+        align-items: center;
     }
 
     .header__logo--img {
-        height: 7.5rem; /* 120px en rem */
+        height: 6rem; /* 120px en rem */
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .header__contact {
@@ -250,17 +264,16 @@ body {
     }
     
     .header__social {
-        position: absolute;
-        left: 2.5rem;
-        text-align: left;
-        top: 0;
         height: 7.5rem;
+        position: relative;
+        text-align: right;      
+        order: 1;  
     }
     
     .header__social--link {
-        margin: 0 0.625rem; /* 10px en rem */
+        margin: 0 1rem; /* 10px en rem */
         color: inherit;
-        font-size: 50px; /* 35px en rem */
+        font-size: 40px; /* 35px en rem */
         text-decoration: none;
     }
     
@@ -331,6 +344,7 @@ body {
     .activity__body {
         font-size: 1rem; /* 16px en rem */
     }
+
     .text-box__middle {
         padding-top: 1rem;
 

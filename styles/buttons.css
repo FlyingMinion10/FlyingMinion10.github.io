@@ -5,24 +5,25 @@
 
 /* Contenedor del menú desplegable */
 .dropdown {
-    position: absolute;
-    right: 0%;
+    margin: 0;
+    position: relative;
     display: inline-block;
+    width: 200px;
+    order: 3;
 }
 
 /* Contenido del menú desplegable */
 .dropdown-content {
     max-height: 0rem;
-    overflow: hidden;
-    position: absolute;
+    min-width: 200px;
     background-color: #FEFFFA;
     color: black;
-    min-width: 200px;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     z-index: 100;
+    overflow: hidden;
     transition: max-height 0.5s ease-in;
-    /* right: -2.5rem; */
-    
+    position: absolute;
+    /* right: 0; */
+    /* top: 100%; */
 }
 
 /* Estilo para los enlaces dentro del menú desplegable */
@@ -51,7 +52,6 @@
 /* Mostrar el menú desplegable cuando se añade la clase 'show' */
 .dropdown-content.show {
     max-height: 30rem; /* Ajusta este valor según la altura de tu menú */
-    
 }
 
 /* Permite que el icono sea clickable */
@@ -64,7 +64,9 @@
     .dropbtn {
         background-color: #ffffff00;
         color: #640103;
-        padding: 30.6px 78.14px;
+        padding: 30.6px 0; 
+        padding-left: 112.14px;
+        padding-right: 78.14px;
         font-size: 50px;
         border: none;
         cursor: pointer;
