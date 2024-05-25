@@ -3,7 +3,6 @@
     flex: 0; /* Hace que el elemento no ocupe espacio */ 
     margin: 0;
     position: relative;
-    width: 12.5rem;
     height: 100%;
     order: 3;
     flex-direction: row-reverse;
