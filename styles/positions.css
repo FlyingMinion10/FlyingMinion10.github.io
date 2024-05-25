@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 7.5rem; /* Ajustado para el tamaño del header */
+}
+
+.header {
+    height: 7.5rem; /* 120px en rem */
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.header__item {
+    justify-content: center; /* Centra los elementos dentro de cada div */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 100%;
+    position: relative;
+    padding: 0 2rem;
+}
+
+.header__logo {
+    order: 1;
+    flex: 1; /* Partes por elemento del total dle header */
+}
+
+.header__logo--img {
+    
+    height: 120px;
+}
+
+.header__contact {
+    order: 2;
+    flex: 2; /* Partes por elemento del total dle header */
+}
+.header__contact--link {
+    font-size: 2.1875rem; /* 35px en rem */
+    letter-spacing: 0.1875rem; /* 3px en rem */
+}
+
+.header__social {
+    order: 3;
+    flex: 1; /* Partes por elemento del total dle header */
+}
+
+.header__social--link {
+    margin: 0 0.625rem; /* 10px en rem */
+    font-size: 40px; /* 35px en rem */
+}
+
+.nav {
+    width: 100%;
+    height: 76px; /* 76px en rem */
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0 18%;
+}
+
+.nav li {
+    flex: 1;
+    font-size: 18px; /* 18px en rem */
+}
+
+.nav__link {
+    padding: 1.75rem 0.9375rem; /* 28px 15px en rem */
+}
+
+.landing {
+    padding: 21.875rem 1.25rem; /* 350px 20px en rem */
+}
+
+.landing__title {
+    font-size: 3.125rem; /* 50px en rem */
+    margin: 0;
+}
+
+.landing__subtitle {
+    font-size: 1.875rem; /* 30px en rem */
+    margin: 0.625rem 0; /* 10px en rem */
+}
+
+.content {
+    padding: 6.25rem 1.25rem; /* 100px 20px en rem */
+}
+
+.content__text {
+    font-size: 1.125rem; /* 18px en rem */
+    line-height: 1.6;
+}
+
+.footer {
+    padding: 1.25rem; /* 20px en rem */
+}
+
+.footer__text {
+    margin: 0;
+    font-size: 0.875rem; /* 14px en rem */
+}
+
+.subpage {
+    padding: 0 1.25rem; /* 20px en rem */
+    padding-top: 3.125rem; /* 50px en rem */
+}
+
+.subpage__title {
+    font-size: 2.5rem; /* 40px en rem */
+    line-height: 1.6;
+}
+
+.subpage__subtitle {
+    font-size: 1.875rem; /* 30px en rem */
+    line-height: 1.6;
+}
+
+.activity {
+    padding: 0 6.25rem; /* 100px en rem */
+    padding-top: 5rem; /* 80px en rem */
+    min-height: 42rem; /* 672px en rem */
+}
+
+.activity__text-container {
+    width: 45%;
+    padding: 1rem;
+}
+
+.activity__imag-container {
+    width: 55%;
+    padding: 1rem;
+}
+
+.activity__image {
+    width: 100%;
+}
+
+.activity__title {
+    font-size: 3.125rem; /* 50px en rem */
+}
+
+.activity__body {
+    font-size: 1.25rem; /* 20px en rem */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .header {
+        height: 7.5rem;
+    }
+
+    .header__item {
+        padding: 0;
+    }
+    .header__logo {
+        height: 7.5rem;
+        order: 2;
+        align-items: center;
+    }
+
+    .header__logo--img {
+        height: 6rem; /* 120px en rem */
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .header__contact {
+        flex: 0;
+    }
+
+    .header__social {
+        height: 7.5rem;
+        order: 1;  
+    }
+
+    .header__social--link {
+        margin: 0 .8rem; /* 10px en rem */
+        font-size: 2.5rem; /* 35px en rem */
+    }
+
+    .landing {
+        padding: 15rem 1rem; /* Ajustado para dispositivos móviles */
+    }
+
+    .landing__title {
+        font-size: 2.5rem; /* 40px en rem */
+    }
+
+    .landing__subtitle {
+        font-size: 1.5rem; /* 24px en rem */
+    }
+
+    .content {
+        padding: 4rem 1rem; /* Ajustado para dispositivos móviles */
+    }
+
+    .content__text {
+        font-size: 1rem; /* 16px en rem */
+    }
+
+    .footer {
+        padding: 1rem; /* Ajustado para dispositivos móviles */
+    }
+
+    .footer__text {
+        font-size: 0.75rem; /* 12px en rem */
+    }
+
+    .subpage {
+        padding: 0 1rem; /* 16px en rem */
+        padding-top: 2.5rem; /* 40px en rem */
+    }
+
+    .subpage__title {
+        font-size: 2rem; /* 32px en rem */
+    }
+
+    .subpage__subtitle {
+        font-size: 1.5rem; /* 24px en rem */
+    }
+
+    .activity {
+        padding: 0 4rem; /* 32px en rem */
+        padding-top: 2rem; /* 48px en rem */
+        min-height: auto;
+    }
+
+    .activity__image {
+        width: 100%;
+    }
+
+    .activity__title {
+        font-size: 2rem; /* 32px en rem */
+    }
+
+    .activity__body {
+        font-size: 1rem; /* 16px en rem */
+    }
+
+    .text-box__middle {
+        padding-top: 1rem;
+    }
+}

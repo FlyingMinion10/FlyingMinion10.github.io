@@ -6,17 +6,18 @@
     <title>El Zaguán</title>
     <script src="https://kit.fontawesome.com/ee356f15bf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/positions.css">
+    <link rel="stylesheet" href="styles/dropdown.css">
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">
+        <div class="header__item header__logo">
             <img class="header__logo--img" src="images/logo.png" alt="Zaguan Logo">
         </div>
-        <div class="header__contact">
+        <div class="header__item header__contact">
             <a class="header__contact--link" href="https://wa.me/523411479199?text=Hola%20me%20gustaria%20hacer%20una%20reserva" target="_blank">Reserva al 33-2258-0420</a>
         </div>
-        <div class="header__social">
+        <div class="header__item header__social">
             <a class="header__social--link" href="tel:+523411479199" target="_self">
                 <i class="fa fa-phone"></i>
             </a>
@@ -27,7 +28,7 @@
                 <i class="fa fa-envelope"></i>
             </a>
         </div>
-        <div class="dropdown">
+        <div class="header__dropdown">
             <button class="dropbtn" onclick="toggleDropdown()"><i class="fa-solid fa-bars"></i></button>
             <div class="dropdown-content" id="dropdownContent">
                 <a class="dropdown__link dropdown__current" href="index.html">INICIO</a>

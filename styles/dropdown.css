@@ -1,29 +1,40 @@
+/* Contenedor del menú desplegable */
+.header__dropdown {
+    flex: 0; /* Hace que el elemento no ocupe espacio */ 
+    margin: 0;
+    position: relative;
+    width: 12.5rem;
+    height: 100%;
+    order: 3;
+    flex-direction: row-reverse;
+}
+
 /* Estilo básico para el botón */
 .dropbtn {
     display: none;
-}
-
-/* Contenedor del menú desplegable */
-.dropdown {
-    margin: 0;
-    position: relative;
-    display: inline-block;
-    width: 200px;
-    order: 3;
+    background-color: #ffffff00;
+    color: #640103;
+    padding: 30.6px 0;
+    padding-right: 78px;
+    font-size: 50px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
 }
 
 /* Contenido del menú desplegable */
 .dropdown-content {
     max-height: 0rem;
-    min-width: 200px;
+    width: 12.5rem;
     background-color: #FEFFFA;
     color: black;
     z-index: 100;
     overflow: hidden;
     transition: max-height 0.5s ease-in;
     position: absolute;
-    /* right: 0; */
-    /* top: 100%; */
+    top: 120px;
+    right: 0;
 }
 
 /* Estilo para los enlaces dentro del menú desplegable */
@@ -62,14 +73,10 @@
 
 @media (max-width: 768px) {
     .dropbtn {
-        background-color: #ffffff00;
-        color: #640103;
-        padding: 30.6px 0; 
-        padding-left: 112.14px;
-        padding-right: 78.14px;
-        font-size: 50px;
-        border: none;
-        cursor: pointer;
         display: block;
+    }
+
+    .header__dropdown {
+        flex: 1;
     }
 }
