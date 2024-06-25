@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalles de la Orden</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/colors.css">
+</head>
+<body>
+    <div id="order-details">
+        <form id="order-details__form">
+            <h2>Detalles de la Orden</h2>
+            <p><strong>Restaurante:</strong> <span id="restaurant-name"></span></p>
+            <p><strong>Tiempo de recolección:</strong> <span id="pickup-time"></span></p>
+            <p><strong>Ubicación:</strong> <span id="destino"></span></p>
+            <p><strong>Descripción del pedido:</strong> <span id="order-description"></span></p>
+            <button type="button" class="button blue--back" onclick="window.location.href='collector_dashboard.html'">Volver atrás</button>
+            <button type="button" class="button blue" id="confirm-pu-button" onclick="confirmPickup()">Confirmar Reparto</button>
+            <a id="gmaps-link" href="#" target="_blank">Abrir en Google Maps</a>
+            <input type="hidden" id="customer-name">
+        </form>
+    </div>
+    <!-- Aquí se pueden añadir scripts JS para manejar eventos de botones -->
+    <script src="js/collectors.js"></script> <!-- MFR -->
+    <script src="js/orders.js"></script>
+</body>
+</html>

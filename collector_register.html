@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Repartidor</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <script src="js/collectors.js" defer></script>
+</head>
+<body>
+    <h1>Registro de Repartidor</h1>
+    <form id="collector-register-form">
+        <label for="collector-user">Nombre de usuario:</label>
+        <input type="text" id="collector-user" name="collector-user" required>
+        
+        <label for="collector-password">Contraseña:</label>
+        <input type="password" id="collector-password" name="collector-password" required>
+        
+        <label for="collector-email">Correo electronico:</label>
+        <input type="text" id="collector-email" name="collector-email" required>
+        
+        <p></p>
+        <p>Los siguientes datos son requeridos por seguridad:</p>
+
+        <label for="collector-name">Nombre completo:</label>
+        <input type="text" id="collector-name" name="collector-name" required>
+        
+        <label for="collector-curp">CURP:</label>
+        <input type="curp" id="collector-curp" name="collector-curp" required>
+        
+        <!-- CARGAR ARCHIVO -->
+        <label for="collector-ine">Fotografía de su INE:</label>
+        <input type="file" id="collector-ine" name="collector-ine" required>
+        
+        <button type="submit" class="button blue" >Aplicar</button>
+        
+    </form>
+    <form action="">
+        <div class="button">
+            <button type="button" class="button blue--back" onclick="window.location.href='collector_login.html'">Iniciar sesión</button>
+        </div>
+    </form>
+</body>
+</html>

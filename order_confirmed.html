@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Orden confirmada</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/colors.css">
+</head>
+<body>
+    <div id="order-confirmed">
+        <form id="order-confirmed__form">
+            <h2>Orden confirmada</h2>
+            <p><strong>Restaurante:</strong> <span id="restaurant-name"></span></p>
+            <p><strong>Tiempo de recolección:</strong> <span id="pickup-time"></span></p>
+            <p><strong>Nombre del cliente:</strong> <span id="customer-name"></span></p>
+            <p><strong>Ubicación:</strong> <span id="destino"></span></p>
+            <p><strong>Descripción del pedido:</strong> <span id="order-description"></span></p>
+            <button type="button" class="button decline" onclick="leavePickup()">Desertar</button>
+            <button type="button" class="button delivered" id="confirm-delivery-button" onclick="confirmDelivery()">Confirmar Reparto</button>
+            <a id="gmaps-link" href="#" target="_blank">Abrir en Google Maps</a>
+        </form>
+        <div id="delivered-form" class="hidden">
+            <form class="order-confirmed__graph">
+                <!-- inserta aqui un a imagen y un texto que se muestren cuando confirmDelivery() se ejecute -->
+                <div>
+                    <h1>¡Orden entregada!</h1>
+                </div>
+                <img src="img/entrega.png" alt="¡Orden entregada!" width="270" height="180">
+            </form>
+        </div>
+    </div>
+    <!-- Aquí se pueden añadir scripts JS para manejar eventos de botones -->
+    <script src="js/collectors.js"></script> <!-- MFR -->
+    <script src="js/orders.js"></script>
+</body>
+</html>

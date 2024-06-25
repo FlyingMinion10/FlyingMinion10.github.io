@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Pedidos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <script src="js/restaurants.js"></script>
+</head>
+<body>
+    <div class="order-interface">
+        <header class="green">
+            <h1>Plataforma de <span id="restaurant-name"></span></h1>
+        </header>
+        <div class="main-content">
+            <div class="order-creation">
+                <button class="button green" id="toggle-creation">Crear Pedido</button>
+                <div id="order-form" class="hidden">
+                    <h2>Crear Nueva Orden</h2>
+                    <form id="create-order-form">
+                        <label for="client-name">Nombre del cliente:</label>
+                        <input type="text" id="client-name" name="client-name" required>
+                        
+                        <label for="order-description">Descripción del pedido:</label>
+                        <textarea class="order__form__description" id="order-description" name="order-description" required></textarea>
+                        
+                        <label for="destination">Lugar de destino:</label>
+                        <input type="text" id="destination" name="destination" required>
+                        
+                        <label for="pickup-time">Tiempo aproximado de recolección:</label>
+                        <input type="text" id="pickup-time" name="pickup-time" required>
+                        
+                        <button type="submit" class="button green">Crear Orden</button>
+                    </form>
+                </div>
+            </div>
+            <div class="orders__contents">
+                <div class="orders__contents--list">
+                    <h2>Órdenes Creadas</h2>
+                    <div id="orders-container-rest" class="orders__contents--elements">
+                        <!-- Órdenes se mostrarán aquí -->
+                    </div>
+                </div>
+                <div class="orders__contents--list">
+                    <h2>Pedidos entregados</h2>
+                    <button type="button" class="button clear" id="clear-delivered-orders">Vaciar</button>
+                    <div id="delivers-container-rest" class="orders__contents--elements">
+                        <!-- Órdenes se mostrarán aquí -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

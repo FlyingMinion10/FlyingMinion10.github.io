@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Restaurante</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <script src="js/restaurants.js" defer></script>
+</head>
+<body>
+    <h1>Registro de Restaurante</h1>
+    <form id="restaurant-register-form">
+        <label for="restaurant-user">Usuario:</label>
+        <input type="text" id="restaurant-user" name="restaurant-user" required>
+        
+        <label for="restaurant-password">Contraseña:</label>
+        <input type="password" id="restaurant-password" name="restaurant-password" required>
+        
+        <label for="restaurant-name">Nombre del Restaurante:</label>
+        <input type="text" id="restaurant-name" name="restaurant-name" required>
+        
+        <label for="restaurant-location">Ubicación (Google Maps):</label>
+        <input type="text" id="restaurant-location" name="restaurant-location" required>
+        
+        <button type="submit" class="button green">Registrar</button>
+        
+    </form>
+    <form action="">
+        <div class="button green--back">
+            <a href="restaurant_login.html">Iniciar sesión</a>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,81 @@
+.blue {
+    background: #1942b4;
+    color: white;
+}
+
+.blue:hover {
+    background: #0f2768;
+}
+
+.blue--back {
+    color: #1942b4;
+    background-color: white;
+    border: #1942b4 1.5px solid;
+}
+
+.blue--back:hover {
+    background: #0f2768;
+    color: white;
+}
+
+.green {
+    background: #28a745;
+    color: white;
+}
+
+.green:hover {
+    background: #218838;
+}
+
+.green--back {
+    color: #28a745;
+    background-color: white;
+    border: #28a745 1.5px solid;
+}
+
+.green--back:hover {
+    background: #218838;
+    color: white;
+}
+
+.index {
+    background-color: #8e28a7;
+    color: white;
+}
+
+.index:hover {
+    background-color: #551865;
+}
+
+.delivered {
+    color: white;
+    background-color: green;
+}
+
+.delivered:hover {
+    color: white;
+    background-color: #004d00;
+}
+
+.decline {
+    color: red;
+    background-color: white;
+    border: red 1.5px solid;
+}
+
+.decline:hover {
+    background: #680f0f;
+    color: white;
+    border: white 1.5px solid;
+}
+
+.clear {
+    color: white;
+    background-color: #d81313;
+}
+
+.clear:hover {
+    background: #680f0f;
+    color: white;
+    border: white 1.5px solid;
+}

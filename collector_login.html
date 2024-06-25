@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión de repartidores</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <script src="js/collectors.js" defer></script>
+</head>
+<body>
+    <h1>Login de Repartidores</h1>
+    <form id="collector-login-form">
+        <label for="collector-login-user">Usuario:</label>
+        <input type="text" id="collector-login-user" name="collector-login-user" required>
+        
+        <label for="collector-login-password">Contraseña:</label>
+        <input type="password" id="collector-login-password" name="collector-login-password" required>
+        
+        <button type="submit" class="button blue" ><strong>Iniciar Sesión</strong></button>
+    </form>
+    <form id="collector-login-form">
+        <button type="button" class="button blue--back" onclick="window.location.href='collector_register.html'">Registrarme</button>
+    </form>
+</body>
+</html>
